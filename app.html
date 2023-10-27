@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="img"></div>
+        <form class="form">
+            <h2 class="custom-title">Predict Student Performance</h2>
+            <h2 class="form-header">Marital status</h2>
+            <select id="uiMaritalStatus">
+                <option value="1">single</option>
+                <option value="2">married</option>
+                <option value="4">divorced</option>
+            </select>
+            
+
+            <h2 class="form-header">Application mode</h2>
+            <select id="uiAppMode">
+                <option value="1">1st phase - general contingent</option>
+                <option value="2">Ordinance No. 612/93</option>
+                <option value="5">1st phase - special contingent (Azores Island)</option>
+                <option value="7">Holders of other higher courses</option>
+                <option value="10">Ordinance No. 854-B/99</option>
+                <option value="15">International student (bachelor)</option>
+                <option value="16">1st phase - special contingent (Madeira Island)</option>
+                <option value="17">2nd phase - general contingent</option>
+                <option value="18">3rd phase - general contingent</option>
+                <option value="26">Ordinance No. 533-A/99, item b2) (Different Plan)</option>
+                <option value="27">Ordinance No. 533-A/99, item b3 (Other Institution)</option>
+                <option value="39">Over 23 years old</option>
+                <option value="42">Transfer</option>
+                <option value="43">Change of course</option>
+                <option value="44">Technological specialization diploma holders</option>
+                <option value="51">Change of institution/course</option>
+                <option value="53">Short cycle diploma holders</option>
+                <option value="57">Change of institution/course (International)</option>
+            </select>
+            
+            <h2 class="form-header">Application order</h2>
+            <input type="number" class="number-input" id="uiAppOrder" name="AppOrder">
+
+            <h2 class="form-header">Course</h2>
+            <select id="uiCourse">
+                <option value="9070">Communication Design</option>
+                <option value="9085">Veterinary Nursing</option>
+                <option value="9147">Management</option>
+                <option value="9238">Social Service</option>
+                <option value="9254">Tourism</option>
+                <option value="9500">Nursing</option>
+                <option value="9670">Advertising and Marketing Management</option>
+                <option value="9773">Journalism and Communication</option>
+                <option value="9991">Management (evening attendance)</option>
+            </select>
+            
+            <h2 class="form-header">Daytime/evening attendance</h2>
+            <select id="uiAttendance">
+                <option value="1">Daytime</option>
+                <option value="0">Evening</option>
+            </select>
+            
+
+            <h2 class="form-header">Previous qualification (grade)</h2>
+            <input type="number" class="number-input" id="uiPrevQualificationGrade" name="PrevQualificationGrade">
+
+            <h2 class="form-header">Father's qualification</h2>
+            <select id="uiFathersQualification">
+                <option value="1">Secondary Education - 12th Year of Schooling or Eq.</option>
+                <option value="3">Higher Education - Degree</option>
+                <option value="19">Basic Education 3rd Cycle (9th/10th/11th Year) or Equiv.</option>
+                <option value="37">Basic education 1st cycle (4th/5th year) or equiv.</option>
+                <option value="38">Basic Education 2nd Cycle (6th/7th/8th Year) or Equiv.</option>
+            </select>
+            
+
+            <h2 class="form-header">Mother's occupation</h2>
+            <select id="uiMothersOccupation">
+                <option value="2">Specialists in Intellectual and Scientific Activities</option>
+                <option value="3">Intermediate Level Technicians and Professions</option>
+                <option value="4">Administrative staff</option>
+                <option value="5">Personal Services, Security and Safety Workers and Sellers</option>
+                <option value="7">Skilled Workers in Industry, Construction and Craftsmen</option>
+                <option value="9">Unskilled Workers</option>
+            </select>
+            
+            <h2 class="form-header">Father's occupation</h2>
+            <select id="uiFathersOccupation">
+                <option value="3">Intermediate Level Technicians and Professions</option>
+                <option value="4">Administrative staff</option>
+                <option value="5">Personal Services, Security and Safety Workers and Sellers</option>
+                <option value="6">Farmers and Skilled Workers in Agriculture, Fisheries and Forestry</option>
+                <option value="7">Skilled Workers in Industry, Construction and Craftsmen</option>
+                <option value="8">Installation and Machine Operators and Assembly Workers</option>
+                <option value="9">Unskilled Workers</option>
+                <option value="10">Armed Forces Professions</option>
+            </select>
+            
+            <h2 class="form-header">Admission grade</h2>
+            <input type="number" class="number-input" id="uiAdmissionGrade" name="AdmissionGrade">
+
+            <h2 class="form-header">Displaced</h2>
+            <select id="uiDisplaced">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            
+            <h2 class="form-header">Debtor</h2>
+            <select id="uiDebtor">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            
+            <h2 class="form-header">Tuition fees up to date</h2>
+            <select id="uiTuition">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            
+            <h2 class="form-header">Gender</h2>
+            <select id="uiGender">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+            
+            <h2 class="form-header">Scholarship holder</h2>
+            <select id="uiScholarship">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            
+            <h2 class="form-header">Age at enrollment</h2>
+            <input type="number" class="number-input" id="uiAgeEnrollment" name="AgeEnrollment">
+
+            <h2 class="form-header">Curricular units 1st sem (enrolled)</h2>
+            <input type="number" class="number-input" id="uiCurricular1stSemEnrolled" name="Curricular1stSemEnrolled">
+
+            <h2 class="form-header">Curricular units 1st sem (evaluations)</h2>
+            <input type="number" class="number-input" id="uiCurricular1stSemEvaluations" name="Curricular1stSemEvaluations">
+
+            <h2 class="form-header">Curricular units 1st sem (approved)</h2>
+            <input type="number" class="number-input" id="uiCurricular1stSemApproved" name="Curricular1stSemApproved">
+
+            <h2 class="form-header">Curricular units 1st sem (grade)</h2>
+            <input type="number" class="number-input" id="uiCurricular1stSemGrade" name="Curricular1stSemGrade">
+
+            <h2 class="form-header">Curricular units 2nd sem (enrolled)</h2>
+            <input type="number" class="number-input" id="uiCurricular2ndSemEnrolled" name="Curricular2ndSemEnrolled">
+
+            <h2 class="form-header">Curricular units 2nd sem (evaluations)</h2>
+            <input type="number" class="number-input" id="uiCurricular2ndSemEvaluations" name="Curricular2ndSemEvaluations">
+
+            <h2 class="form-header">Curricular units 2nd sem (approved)</h2>
+            <input type="number" class="number-input" id="uiCurricular2ndSemApproved" name="Curricular2ndSemApproved">
+
+            <h2 class="form-header">Curricular units 2nd sem (grade)</h2>
+            <input type="number" class="number-input" id="uiCurricular2ndSemGrade" name="Curricular2ndSemGrade">
+
+            <h2 class="form-header">Curricular units 2nd sem (without evaluations)</h2>
+            <input type="number" class="number-input" id="uiCurricular2ndSemWithoutEvaluations" name="Curricular2ndSemWithoutEvaluations">
+
+            <h2 class="form-header">GDP</h2>
+            <input type="number" class="number-input" id="uiGDP" name="GDP">
+
+            <button class="submit" onclick="onClickedEstimatePerformance()" type="button">Estimate Performance</button>
+            <div id="uiEstimatedPerformance" class="result">
+                <h2></h2>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+        </form>
+    </body>
+</html>

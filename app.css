@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.custom-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 60px;
+
+}
+
+.form {
+    max-width: 400px; 
+    font-family: "Roboto", sans-serif; 
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 20px; 
+    z-index: 2;
+    background: #fff;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333; 
+}
+
+
+.text-input,
+.number-input {
+    outline: 0;
+    background: #f5f5f5;
+    width: 100%;
+    border: 1px solid #ccc; 
+    margin: 0 0 15px; 
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out; 
+}
+
+.text-input:focus,
+.number-input:focus {
+    border-color: #3498db; 
+}
+
+.submit {
+    background: #3498db; 
+    color: #fff;
+    border: 0;
+    margin: 15px 0 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background: #2980b9; 
+}
+
+.result {
+    background: #ecf0f1; 
+    color: #333; 
+    margin: 15px 0 10px;
+    padding: 12px 0; 
+    font-size: 18px; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img {
+    background: url('https://brightspotcdn.byu.edu/dims4/default/61d6ff1/2147483647/strip/true/crop/3544x2658+0+0/resize/1920x1440!/quality/90/?url=https%3A%2F%2Fbrigham-young-brightspot.s3.amazonaws.com%2F9f%2Fd4%2F93115f5040b189f2893a932e8a87%2Fgrad1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: grayscale(70%); 
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
